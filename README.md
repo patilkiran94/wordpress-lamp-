@@ -1,29 +1,25 @@
-# wordpress-lamp-
-✅ WordPress LAMP Stack – Docker Project
+👉 Linux + Apache + MySQL + PHP (WordPress)
 
-Architecture
+This is industry-standard, easy to deploy, and interview-ready.
+
+✅ WordPress LAMP Stack – Docker Project
+🏗 Architecture
 Browser
    ↓
-Frontend (Nginx + HTML)
+Apache + PHP (WordPress)
    ↓
-Backend (Node.js API)
-   ↓
-Database (MySQL)
-
+MySQL Database
 
 📁 Project Structure
-three-tier-docker/
+wordpress-lamp/
 │
 ├── docker-compose.yml
 │
-├── frontend/
-│   ├── Dockerfile
-│   └── index.html
+├── apache/
+│   └── Dockerfile
 │
-├── backend/
-│   ├── Dockerfile
-│   ├── package.json
-│   └── server.js
+├── mysql/
+│   └── init.sql
 │
-└── database/
-    └── init.sql
+└── wordpress/
+    └── wp-config.php   (optional)
